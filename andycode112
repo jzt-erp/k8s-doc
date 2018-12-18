@@ -1,0 +1,19 @@
+k8s基础组件：
+  etcd 集群整体存储 简单的、分布式的、一致的key-value存储，主要被用来共享配置和服务发现
+  kubectl 命令行接口
+  apiservice API服务器
+  controller-manager 控制管理服务器
+  schuduler 调度器
+  CoreDNS DNS服务
+
+  kubelet 最主要的控制器，它是Pod和Node API的主要实现者，Kubelet负责驱动容器执行层
+  kube-proxy 负责为Pod创建代理服务；引到访问至服务；并实现服务到Pod的路由和转发，以及通过应用的负载均衡
+  docker 
+  pod
+
+k8s高级组件：
+  helm 看作Kubernetes下的apt-get/yum 包管理工具
+  ceph 一个分布式存储系统
+  ingress(treafik) 一款开源的反向代理与负载均衡工具 http://www.cnblogs.com/FRESHMANS/p/9815598.html
+  prometheus 监控组件 http://blog.51cto.com/newfly/2061135  grafana、prometheus部署 ，node-exporter、kube-state-metrics、node-directory-size-metrics 三个采集器，相当于prometheus的agent
+  harbor 用于存储和分发Docker镜像的企业级Registry服务器
